@@ -9,7 +9,7 @@ const port = 3001;
 
 // Set up session management
 app.use(session({
-    secret: process.env.GITHUB_SECRET_KEY,
+    secret: process.env.GITHUB_CLIENT_SECRET,
     resave: false,
     saveUninitialized: false,
 }));
