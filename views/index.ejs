@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passport-GitHub Demo</title>
+</head>
+<body>
+  <% if (user) { %>
+    <h1>Welcome, <%= user.displayName %>!</h1>
+    <a href="/logout">Logout</a>
+  <% } else { %>
+    <a href="/auth/github">Login with GitHub</a>
+  <% } %>
+</body>
+</html>
